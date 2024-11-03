@@ -13,6 +13,8 @@ Can write on two lines
 void exercise_1()
 {
     // Your code here
+    std::cout << "My first C-program" << std::endl;
+    std::cout << "Can write on two lines" << std::endl;
 }
 
 /*
@@ -27,6 +29,12 @@ Area of the triangle: 10.000000
 void exercise_2(double base, double height)
 {
     // Your code here
+
+    // Calculate the area using the formula
+    double area = (base * height) / 2;
+       // Output the area to the screen
+    printf("Area of the triangle: %.6f\n", area);
+
 }
 
 /*
@@ -36,10 +44,10 @@ Use a reference table for operator precedence if you are not sure about the orde
 void exercise_3()
 {
     // Write your answers here
-    int answer1 = 0;
-    int answer2 = 0;
-    int answer3 = 0;
-    int answer4 = 0;
+    int answer1 = 11; // -3 + 4 * 5 - 6 = 11
+    int answer2 = 1;  // 3 + 4 % 5 - 6 = 1
+    int answer3 = 0;  // -3 * 4 % -6 / 5 = 0
+    int answer4 = 1;  // (7 + 6) % 5 / 2 = 1
 
     // The print statements below will all print 1 if your answers are correct
     std::cout << (answer1 == (-3 + 4 * 5 - 6)) << std::endl;
@@ -65,6 +73,9 @@ Hint: use the '?' operator. You can define the function in one line.
 void exercise_4(int x)
 {
     // Your code here
+    x != 0 
+        ? std::cout << "10 divided by " << x << " is " << (10 / x) << std::endl 
+        : std::cout << "Dividing by zero is not supported" << std::endl;
 }
 
 /*
@@ -74,26 +85,25 @@ Use a reference table for operator precedence if you are not sure about the orde
 void exercise_5()
 {
     // Write your answers here
-    int answer1 = 0;
-    int answer2 = 0;
-    int answer3 = 0;
-    int answer4 = 0;
-    int answer5 = 0;
+    int answer1 = 10; 
+    int answer2 = 40; 
+    int answer3 = 4;  
+    int answer4 = 4; 
+    int answer5 = 1;  
 
     int x, y, z;
     x = 2;
     x *= 3 + 2;
 
     // The print statements below will print 1 if your answers are correct
-    std::cout << (answer1 == x) << std::endl;
+   std::cout << (answer1 == x) << std::endl; 
+    x *= y = z = 4; // x = 40, y = 4, z = 4
+    std::cout << (answer2 == x) << std::endl; 
+    std::cout << (answer3 == y) << std::endl; 
+    std::cout << (answer4 == z) << std::endl; 
 
-    x *= y = z = 4;
-    std::cout << (answer2 == x) << std::endl;
-    std::cout << (answer3 == y) << std::endl;
-    std::cout << (answer4 == z) << std::endl;
-
-    x = y == z;
-    std::cout << (answer5 == x) << std::endl;
+    x = y == z; 
+    std::cout << (answer5 == x) << std::endl; 
 }
 
 /*
@@ -103,9 +113,9 @@ Use a reference table for operator precedence if you are not sure about the orde
 void exercise_6()
 {
     // Write your answers here
-    int answer1 = 0;
-    int answer2 = 0;
-    int answer3 = 0;
+    int answer1 = 3;
+    int answer2 = 2;
+    int answer3 = 4;
 
     int x, y, z;
     x = y = z = 1;
